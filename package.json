@@ -1,0 +1,25 @@
+{
+  "name": "hbd-letter-generator",
+  "version": "0.0.0",
+  "description": "Tool for generate a custom hbd letter and a website with awsome templates",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ch3ber/hbd-letter-generator.git"
+  },
+  "keywords": [
+    "javascript",
+    "hbd-letter",
+    "generator",
+    "nodejs"
+  ],
+  "author": "Eber Edrey Alejo Berrones <eber4202@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ch3ber/hbd-letter-generator/issues"
+  },
+  "homepage": "https://github.com/ch3ber/hbd-letter-generator#readme"
+}
