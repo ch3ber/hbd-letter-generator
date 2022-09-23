@@ -1,8 +1,9 @@
 {
   "name": "hbd-letter-generator",
   "version": "0.0.0",
-  "description": "Tool for generate a custom hbd letter and a website with awsome templates",
+  "description": "Tool to generate custom happy birthday letter and showing in a website",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ch3ber/hbd-letter-generator/issues"
   },
-  "homepage": "https://github.com/ch3ber/hbd-letter-generator#readme"
+  "homepage": "https://github.com/ch3ber/hbd-letter-generator#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
