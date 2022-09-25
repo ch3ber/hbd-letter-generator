@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter</title>
+  <style>
+    *,*::before,*::after { box-sizing: inherit; }
+    html { font-size: 62.5%; box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 300ms ease;
+    }
+    a:hover {
+      text-decoration: underline;
+      opacity: 0.7;
+    }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .letter {
+      max-width: 40rem;
+      border-radius: 2rem;
+      border: 1px #ccc solid;
+      padding: 3rem;
+    }
+    .footer {
+      padding: 3rem;
+      background-color: #e5e9f0;
+    }
+    .footer__content {
+      margin: 0 auto;
+      max-width: 80rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 10rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="letter">
+      <h1>Happy Birdthay [[PROFILE_NAME]]!!</h1>
+      <h2>Of: [[OWNER_NAME]]</h2>
+      <p>You are [[PROFILE_AGE]] old, awesome, you born in [[PROFILE_DATE_OF_BIRTHDAY]]</p>
+      <p>[[LETTER_CONTENT]]</p>
+    </main>
+  </div>
+
+    <footer class="footer" id="contacto">
+      <div class="footer__content">
+        <section>
+          <h3 class="">Desarrollador</h3>
+          <p class="">
+            Hecho con 💙 por <strong>Eber Alejo</strong>
+          </p>
+        </section>
+
+        <section>
+          <h3>Creado con hbd-letter-generator</h3>
+          <a href="https://github.com/ch3ber/hbd-letter-generator" rel="noreferrer" target="_blank">Probar</a>
+        </section>
+
+        <section>
+          <h3 class="">Contacto</h3>
+          <ul class="">
+            <li>
+              <a class="" href="mailto:eber4202@hotmail.com">
+                <i class=""></i>
+                E-Mail
+              </a>
+            </li>
+            <li>
+              <a class="" rel="noreferrer" href="https://github.com/ch3ber" target="_blank">
+                <i class=""></i>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a class="" rel="noreferrer" href="https://twitter.com/ch3ber_dev" target="_blank">
+                <i class=""></i>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a class="" rel="noreferrer" href="https://www.linkedin.com/in/eberalejo" target="_blank">
+                <i class=""></i>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+</body>
+</html>

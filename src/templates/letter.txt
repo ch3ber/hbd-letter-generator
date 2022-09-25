@@ -1,2 +1,8 @@
-Happy Birthday [[name]]!!
-You are [[age]] old, awesome, you born in [[dateOfBirth]]
+[+] Letter for: [[PROFILE_NAME]]
+[+] Of: [[OWNER_NAME]]
+
+------------------
+
+Happy Birthday [[PROFILE_NAME]]!!
+You are [[PROFILE_AGE]] old, awesome, you born in [[PROFILE_DATE_OF_BIRTHDAY]]
+[[LETTER_CONTENT]]
