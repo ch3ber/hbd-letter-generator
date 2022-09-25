@@ -1,9 +1,15 @@
 # HBD letter generator
 
-Tool to generate custom happy birthday letter and showing in a website
+CLI Tool to generate custom happy birthday letter and showing in a website
 
+## Installation ans usage
 
+```bash
+git clone https://github.com/ch3ber/hbd-letter-generator
+cd hbd-letter-generator
+node .
+```
 
-## Authors
+## Author
 
-- [@ch3ber](https://www.github.com/ch3ber)
+[@ch3ber](https://www.github.com/ch3ber)
