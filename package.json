@@ -4,6 +4,7 @@
   "description": "Tool to generate custom happy birthday letter and showing in a website",
   "main": "src/index.js",
   "type": "module",
+  "bin": "src/index.js",
   "scripts": {
     "dev": "nodemon ./src/index.js",
     "lint": "eslint .",
