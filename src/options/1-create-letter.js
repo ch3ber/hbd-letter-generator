@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs'
-import path from 'path';
-import config from '../config.js';
+import path from 'path'
+import config from '../config.js'
 
 export default async () => {
   console.clear()
