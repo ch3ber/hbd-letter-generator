@@ -22,6 +22,7 @@
       text-decoration: underline;
       opacity: 0.7;
     }
+    h1,h2,h3, p { margin: 0; }
     .container {
       min-height: 100vh;
       display: flex;
@@ -29,10 +30,28 @@
       align-items: center;
     }
     .letter {
+      -webkit-box-shadow: 0 4px 10px 0 #c9c9c9;
+      -moz-box-shadow: 0 4px 10px 0 #c9c9c9;
+      box-shadow: 0 4px 10px 0 #c9c9c9;
+
       max-width: 40rem;
       border-radius: 2rem;
-      border: 1px #ccc solid;
+      background-color: #f4ece4;
+      overflow: hidden;
+    }
+    .letter__head {
+      background-color: #fad335;
       padding: 3rem;
+      color: #191919;
+    }
+    .letter__info {
+      padding: 2rem 4rem;
+      font-size: 1.4rem;
+      color: #5a5a5a;
+    }
+    .letter__content {
+      padding: 0 3rem 3rem 3rem;
+      color: #1376b9;
     }
     .footer {
       padding: 3rem;
@@ -50,10 +69,17 @@
 <body>
   <div class="container">
     <main class="letter">
-      <h1>Happy Birdthay [[PROFILE_NAME]]!!</h1>
-      <h2>Of: [[OWNER_NAME]]</h2>
-      <p>You are [[PROFILE_AGE]] old, awesome, you born in [[PROFILE_DATE_OF_BIRTHDAY]]</p>
-      <p>[[LETTER_CONTENT]]</p>
+      <div class="letter__head">
+        <h1>Happy Birdthday [[PROFILE_NAME]]!!!</h1>
+      </div>
+      <div class="letter__info">
+        <p><strong>Birdthday number:</strong> [[PROFILE_AGE]] from [[PROFILE_DATE_OF_BIRTHDAY]]</p>
+        <p><strong>Letter of:</strong> [[OWNER_NAME]]</p>
+        <p><strong>Letter For:</strong> [[PROFILE_NAME]]</p>
+      </div>
+      <div class="letter__content">
+        <p>[[LETTER_CONTENT]]</p>
+      </div>
     </main>
   </div>
 

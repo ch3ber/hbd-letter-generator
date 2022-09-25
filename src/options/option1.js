@@ -1,12 +1,15 @@
-import { promises as fs } from 'fs'
+import { promises as fs, existsSync } from 'fs'
 import path from 'path'
+import { exec } from 'child_process'
+
 import config from '../../config.js'
 import constants from '../constants.js'
-import optionMenuControler from '../controlers/optionMenu.controler.js'
+import { showPreview } from '../utils/showPreview.js'
 
-export default async () => {
-  console.clear()
-  console.log('[*] Generating your letter...')
+export const option1 = async (preview) => {
+  if (!existsSync('./output')) {
+    await exec('mkdir output')
+  }
 
   const letter = await fs.readFile(path.resolve('src/templates/letter.txt'), { encoding: 'utf-8' })
 
@@ -17,10 +20,9 @@ export default async () => {
     .replace(constants.owner.name, config.owner.name)
     .replace(constants.letter.content, config.letter.content)
 
-  await fs.writeFile(path.resolve('output/letter.txt'), optionMenuControler)
+  await fs.writeFile(path.resolve('output/letter.txt'), newLetter)
 
-  console.log('[*] process complete!')
-
-  console.log(optionMenuControler)
-  optionMenuControler(false)
+  if (preview) {
+    showPreview(newLetter)
+  }
 }

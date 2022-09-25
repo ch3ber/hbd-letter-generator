@@ -1,6 +1,6 @@
 {
   "name": "hbd-letter-generator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Tool to generate custom happy birthday letter and showing in a website",
   "main": "src/index.js",
   "type": "module",
@@ -26,11 +26,13 @@
   },
   "homepage": "https://github.com/ch3ber/hbd-letter-generator#readme",
   "devDependencies": {
-    "eslint": "^8.24.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.0.1",
-    "nodemon": "^2.0.20"
+    "eslint": "8.24.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.3.0",
+    "eslint-plugin-promise": "6.0.1"
+  },
+  "dependencies": {
+    "inquirer": "9.1.2"
   }
 }
